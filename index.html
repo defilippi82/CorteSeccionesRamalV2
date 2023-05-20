@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="bp-cp.css">
+		<title> Corte Secciones by FHD</title>
+	</head>
+
+<body>
+	<header>
+		<canvas id="micanvas" width="900" height="400"></canvas>
+		
+	</header>
+
+	<main>
+		<ul class="columna">
+			<li>
+			<div class="primeraColumna">
+				<form>
+					<h2 for="responsables">Personal a cargo</h2>
+						<input type="text" id="responsables" required placeholder="a cargo de">
+								
+						<fieldset>
+							<h1>Secciones</h1>
+							<ul class="lista1">
+							<li><label for="checkbox-plat1"><input type="checkbox" name="secciones" value="1" id="checkbox-secciones">Plataforma 1</label></li>
+							<li><label for="checkbox-plat2"><input type="checkbox" name="secciones" value="2" id="checkbox-secciones">Plataforma 2</label></li>
+							<li><label for="checkbox-plat3"><input type="checkbox" name="secciones" value="3" id="checkbox-secciones">Plataforma 3</label></li>
+							<li><label for="checkbox-plat4"><input type="checkbox" name="secciones" value="4" id="checkbox-secciones">Plataforma 4</label></li>
+							<li><label for="checkbox-plat5"><input type="checkbox" name="secciones" value="5" id="checkbox-secciones">Plataforma 5</label></li>
+							<li><label for="checkbox-plat6"><input type="checkbox" name="secciones" value="6" id="checkbox-secciones">Plataforma 6</label></li>
+							<li><label for="checkbox-plat7"><input type="checkbox" name="secciones" value="7" id="checkbox-secciones">Plataforma 7</label></li>
+							<li><label for="checkbox-plat8"><input type="checkbox" name="secciones" value="8" id="checkbox-secciones">Plataforma 8</label></li></ul>
+							<ul class="lista2">
+								<h2>BP-CP</h2>
+							<li><label for="checkbox-12/16"><input type="checkbox" name="secciones" value="12/16" id="checkboxcheckbox-secciones">12/16</label>
+							<label for="checkbox-13/17"><input type="checkbox" name="secciones" value="13/17" id="checkbox-secciones">13/17</label>
+							<label for="checkbox-40/41"><input type="checkbox" name="secciones" value="40/41" id="checkbox-secciones">40/41</label>
+							<label for="checkbox-40A/41A"><input type="checkbox" name="secciones" value="40A/41A" id="checkbox-secciones">40A/41A</label>
+							<label for="checkbox-42/43"><input type="checkbox" name="secciones" value="42/43" id="checkbox-secciones">42/43</label>
+							<label for="checkbox-42A/43A"><input type="checkbox" name="secciones" value="42A/43A" id="radio-secciones">42A/43A</label>
+							<label for="checkbox-44/45"><input type="checkbox" name="secciones" value="44/45" id="checkbox-secciones">44/45</label>
+							<label for="checkbox-44A/45A"><input type="checkbox" name="secciones" value="44A/45A" id="checkbox-secciones">44A/45A</label></li>
+							<li><label for="checkbox-50/51"><input type="checkbox" name="secciones" value="50/51" id="checkbox-secciones">50/51</label>
+							<label for="checkbox-52/53"><input type="checkbox" name="secciones" value="52/53" id="checkbox-secciones">52/53</label></li>
+							<li><label for="checkbox-depositoSuarez"><input type="checkbox" name="secciones" value="Dep. Suárez" id="checkbox-secciones">Depósito Suárez</label></li>
+							</ul>
+							<ul class="lista2">
+								<H2>AP</H2>
+							<li><label for="checkbox-10/14"><input type="checkbox" name="secciones" value="10/14" id="checkboxcheckbox-secciones">10/14</label>
+							<label for="checkbox-11/15"><input type="checkbox" name="secciones" value="13/17" id="checkbox-secciones">11/15</label>
+							<li><label for="checkbox-12/16"><input type="checkbox" name="secciones" value="12/16" id="checkboxcheckbox-secciones">12/16</label>
+							<label for="checkbox-13/17"><input type="checkbox" name="secciones" value="13/17" id="checkbox-secciones">13/17</label>
+							<label for="checkbox-18/19"><input type="checkbox" name="secciones" value="18/19" id="checkbox-secciones">18/19</label>
+							<label for="checkbox-20/21"><input type="checkbox" name="secciones" value="20/21" id="checkbox-secciones">20/21</label>
+							<label for="checkbox-22/23"><input type="checkbox" name="secciones" value="22/23" id="checkbox-secciones">22/23</label>
+							<label for="checkbox-24/25"><input type="checkbox" name="secciones" value="24/25" id="radio-secciones">24/25</label>
+							<label for="checkbox-26/27"><input type="checkbox" name="secciones" value="26/27" id="checkbox-secciones">26/27</label>
+							<label for="checkbox-28/29"><input type="checkbox" name="secciones" value="28/29" id="checkbox-secciones">28/29</label></li>
+							<li><label for="checkbox-depositoVictoria"><input type="checkbox" name="secciones" value="Dep. Victoria" id="checkbox-secciones">Depósito Victoria</label></li>
+							</ul>
+						</fieldset>
+
+					<button type=button value="Ocupar Vía" class="enviar" onclick="agregarFila()">Ocupar Vía</button>
+				</form>
+			</div>
+		</li>
+		<li>
+			<div class="segundaColumna">
+
+				<form class="segundaColumna">
+
+				<h2 for="viaLibre">Eliminar Trabajo</h2>
+				<input type="text" id="viaLibre" class="viaLibre" required required placeholder="Nº Trabajo">
+
+		
+				<button type="button" id="librar" value="Vía Expedita" class="enviar" onclick="borrarFila()">Vía Expedita</button>
+
+				</form>
+			</div>
+		</li>
+	</ul>
+	</main>
+	<section>
+		<h1>Tabla de responsables</h1>
+		<table>
+		<thead>
+			<tr>
+				<th>N°</th>
+				<th>Responsables</th>
+				<th>Secciones</th>
+			</tr>
+		</thead>
+		<tbody id="tabla">
+		</tbody>
+	</table>
+</section>
+</body>
+	<footer>
+
+
+		<img class="rodapie" src="imagenes/logo-grisSin-fondo.png" width="125px" height="125px">
+		<p class="eslogan">Navegá más allá de lo esperado</p>
+		
+		
+	</footer>
+
+
+<script src="bp-cp.js"></script>
+  	
+
+</html>
