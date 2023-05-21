@@ -221,6 +221,7 @@ let srNo = 0
   tbody.innerHTML += fila;
   dibujarTrabajo();
   resaltarIguales();
+  document.querySelector('responsables').value="";
   responsables.focus();
  
   }
@@ -246,6 +247,7 @@ let srNo = 0
       img.onload();
       dibujarTrabajo();
       resaltarIguales(); // Actualizar el resaltado de las filas
+      document.getElementById("viaLibre").value= "";
       viaLibre.focus();
     }
   }
