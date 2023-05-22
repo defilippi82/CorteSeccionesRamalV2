@@ -228,8 +228,7 @@ function agregarFila() {
   resaltarIguales();
   document.querySelector('responsables').value="";
   responsables.focus();
-  document.querySelector('#responsables').value = '';
- 
+   
   }
   /*function borrarFila() {
     var viaLibre = document.getElementById("viaLibre").value;
