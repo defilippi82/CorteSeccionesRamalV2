@@ -212,10 +212,7 @@ function agregarFila() {
         if (checkboxes[i].checked){
           secciones += checkboxes[i].value + ', ';
         }
-
         checkboxes[i].checked = false; // Desmarcar el checkbox
-
-
       }
         secciones = secciones.slice(0, -2);
   let fila = '<tr>';
@@ -226,18 +223,10 @@ function agregarFila() {
   tbody.innerHTML += fila;
   dibujarTrabajo();
   resaltarIguales();
-  document.querySelector('responsables').value=" ";
   responsables.focus();
-   
+  document.querySelector('#responsables').value= "";
   }
-  /*function borrarFila() {
-    var viaLibre = document.getElementById("viaLibre").value;
-    if (viaLibre == srNo) {
-      var fila = event.target.parentNode.parentNode;
-      fila.remove();
-      srNo--;
-    }
-  }*/
+  
   function borrarFila() {
   var srNo = document.getElementById("viaLibre").value;
   var tabla = document.getElementById("tabla");
