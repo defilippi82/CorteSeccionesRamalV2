@@ -226,7 +226,7 @@ function agregarFila() {
   tbody.innerHTML += fila;
   dibujarTrabajo();
   resaltarIguales();
-  document.querySelector('responsables').value="";
+  document.querySelector('responsables').value=" ";
   responsables.focus();
    
   }
