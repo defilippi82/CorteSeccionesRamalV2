@@ -211,6 +211,7 @@ let srNo = 0
         if (checkboxes[i].checked){
           secciones += checkboxes[i].value + ', ';
         }
+        checkboxes[i].checked = false;
       }
         secciones = secciones.slice(0, -2);
   let fila = '<tr>';
