@@ -212,7 +212,11 @@ function agregarFila() {
         if (checkboxes[i].checked){
           secciones += checkboxes[i].value + ', ';
         }
+<<<<<<< HEAD
         checkboxes[i].checked = false; // Desmarcar el checkbox
+=======
+        checkboxes[i].checked = false;
+>>>>>>> 927377d9246458ac9977516809416bbea9e04908
       }
         secciones = secciones.slice(0, -2);
   let fila = '<tr>';
@@ -223,6 +227,7 @@ function agregarFila() {
   tbody.innerHTML += fila;
   dibujarTrabajo();
   resaltarIguales();
+  document.querySelector('responsables').value="";
   responsables.focus();
   document.querySelector('#responsables').value = '';
  
@@ -249,6 +254,7 @@ function agregarFila() {
       img.onload();
       dibujarTrabajo();
       resaltarIguales(); // Actualizar el resaltado de las filas
+      document.getElementById("viaLibre").value= "";
       viaLibre.focus();
     }
     document.getElementById("viaLibre").value = '';
