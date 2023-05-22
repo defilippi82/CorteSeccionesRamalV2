@@ -201,7 +201,8 @@ function dibujarTrabajo() {
 
 let tbody = document.querySelector('tbody');
 let srNo = 0
-    function agregarFila() {
+
+function agregarFila() {
       let tbody = document.querySelector('tbody');
       let srNo = tbody.rows.length + 1;
       let responsable = document.querySelector('#responsables').value;
@@ -211,6 +212,7 @@ let srNo = 0
         if (checkboxes[i].checked){
           secciones += checkboxes[i].value + ', ';
         }
+        checkboxes[i].checked = false; // Desmarcar el checkbox
       }
         secciones = secciones.slice(0, -2);
   let fila = '<tr>';
@@ -222,6 +224,7 @@ let srNo = 0
   dibujarTrabajo();
   resaltarIguales();
   responsables.focus();
+  document.querySelector('#responsables').value = '';
  
   }
   /*function borrarFila() {
@@ -248,6 +251,7 @@ let srNo = 0
       resaltarIguales(); // Actualizar el resaltado de las filas
       viaLibre.focus();
     }
+    document.getElementById("viaLibre").value = '';
   }
 }
 function borrarTrabajo() {
