@@ -187,7 +187,17 @@ footer, .eslogan{
     width: 125px;
     transition: 1s;
 }
-  }            
+  }   
+.reloj {
+    color: white;
+    font-size: 1.5em;
+    font-family: Arial;
+    letter-spacing: 5px;
+    text-align: center;
+    background-color: blue;
+    border: 5px solid black;
+    border-radius: 10px;
+}
 /* CSS para movil */
 
 @media screen and (max-width: 480px) {
