@@ -365,7 +365,7 @@ function cargarReloj(){
     var minuto = fechahora.getMinutes(); 
     var segundo = fechahora.getSeconds(); 
 
-    // Variable meridiano con el valor 'AM' 
+    /*// Variable meridiano con el valor 'AM' 
     var meridiano = "AM";
     
     
@@ -384,7 +384,7 @@ function cargarReloj(){
         // Variable meridiano con el valor 'PM' 
         meridiano = "PM";
 
-    }
+    }*/
     
     // Formateamos los ceros '0' del reloj 
     hora = (hora < 10) ? "0" + hora : hora;
@@ -392,7 +392,7 @@ function cargarReloj(){
     segundo = (segundo < 10) ? "0" + segundo : segundo;
     
     // Enviamos la hora a la vista HTML 
-    var tiempo = hora + ":" + minuto + ":" + segundo + " " + meridiano;    
+    var tiempo = hora + ":" + minuto + ":" + segundo /*+ " " + meridiano*/;    
     document.getElementById("dia-hora").innerText = tiempo;
     document.getElementById("dia-hora").textContent = tiempo;
 
