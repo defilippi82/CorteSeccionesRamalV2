@@ -1,9 +1,11 @@
 const canvas = document.getElementById("micanvas");
 const ctx = canvas.getContext("2d");
 const img = new Image();
-const trabajo = new Image()
+const trabajo = new Image();
+const trabajo2 = new Image();
 img.src = "imagenes/esquemaCom.png";
-trabajo.src = "imagenes/trabajo.png"
+trabajo.src = "imagenes/trabajo.png";
+trabajo2.src = "imagenes/trabajo2.png";
 
 img.onload = function(){
   ctx.drawImage(img, 0, 0, 900, 400);
@@ -12,29 +14,7 @@ img.onload = function(){
 const tabla = document.getElementById("tabla")
 
 
-/*
-function resaltarIguales(){
-  let resaltados ={}
-  for (var i = 0; i < tabla.rows.length; i++){
-    var valorActual = tabla.rows[i].cells[2].innerHTML;
 
-    for (var j = i+ 1; j < tabla.rows.length; j++){
-    var valorSiguiente = tabla.rows[j].cells[2].innerHTML;
-
-      if (valorActual === valorSiguiente && !resaltados["${i}-${j}"]){
-        tabla.rows[i].classList.add("resaltado");
-        tabla.rows[j].classList.add("resaltado");
-      }
-      else if (resaltados["${i}-${j}"]){
-        tabla.rows[i].classList.remove("resaltado");
-        tabla.rows[j].classList.remove("resaltado");
-        
-      }
-  }
-}
-}
-
-*/
 function resaltarIguales() {
   let seccionesRepetidas = {};
   let filasResaltadas = new Set(); // Conjunto de índices de filas que deben ser resaltadas
@@ -77,6 +57,11 @@ function resaltarIguales() {
       filasResaltadas.add(i);
     } else {
       filasResaltadas.delete(i);
+    }
+    if (tieneRepetidos) {
+      dibujarTrabajo2();
+    } else {
+      dibujarTrabajo();
     }
   }
 
@@ -196,6 +181,106 @@ function dibujarTrabajo() {
     } else {
       tabla.rows[i].classList.remove("resaltado"); // Quitar la clase "resaltado" de las filas con una sola sección
     }
+  }
+}
+function dibujarTrabajo2() {
+  
+  for (var i = 0; i < tabla.rows.length; i++) {
+    var secciones = tabla.rows[i].cells[2].innerHTML.split(","); // Obtener las secciones como un arreglo de valores
+    
+    for (var j = 0; j < secciones.length; j++) {
+      var seccion = secciones[j].trim(); // Eliminar espacios en blanco alrededor de cada sección
+      
+      switch (seccion) {
+        case "8":
+          ctx.drawImage(trabajo2, 20, 30, 25, 25);
+          break;
+        case "7":
+          ctx.drawImage(trabajo2, 20, 40, 25, 25);
+          break;
+        case "6":
+          ctx.drawImage(trabajo2, 20, 50, 25, 25);
+          break;
+        case "5":
+          ctx.drawImage(trabajo2, 20, 60, 25, 25);
+          break;
+        case "4":
+          ctx.drawImage(trabajo2, 20, 70, 25, 25);
+          break;
+        case "3":
+          ctx.drawImage(trabajo2, 20, 80, 25, 25);
+          break;
+        case "2":
+          ctx.drawImage(trabajo2, 20, 90, 25, 25);
+          break;
+        case "1":
+          ctx.drawImage(trabajo2, 20, 100, 25, 25);
+          break;
+        case "10/14":
+          ctx.drawImage(trabajo2, 220, 90, 50, 50);
+          break;
+        case "11/15":
+          ctx.drawImage(trabajo2, 240, 90, 50, 50);
+          break;
+        case "13/17":
+          ctx.drawImage(trabajo2, 250, 90, 50, 50);
+          break;
+        case "12/16":
+          ctx.drawImage(trabajo2, 260, 90, 50, 50);
+          break;
+        case "18/19":
+          ctx.drawImage(trabajo2, 340, 90, 50, 50);
+          break;
+        case "40/41":
+          ctx.drawImage(trabajo2, 225, 60, 50, 50);
+          ctx.drawImage(trabajo2, 20, 250, 50, 50);
+          break;
+        case "20/21":
+          ctx.drawImage(trabajo2, 590, 90, 50, 50);
+          break;
+        case "40A/41A":
+          ctx.drawImage(trabajo2, 230, 250, 50, 50);
+          break;
+        case "22/23":
+          ctx.drawImage(trabajo2, 740, 90, 50, 50);
+          ctx.drawImage(trabajo2, 240, 170, 50, 50);
+          break;
+        case "42/43":
+          ctx.drawImage(trabajo2, 290, 250, 50, 50);
+          break;
+        case "24/25":
+          ctx.drawImage(trabajo2, 370, 170, 50, 50);
+          break;
+        case "42A/43A":
+          ctx.drawImage(trabajo2, 465, 250, 50, 50);
+          break;
+        case "26/27":
+          ctx.drawImage(trabajo2, 495, 170, 50, 50);
+          break;
+        case "44/45":
+          ctx.drawImage(trabajo2, 695, 250, 50, 50);
+          break;
+        case "28/29":
+          ctx.drawImage(trabajo2, 620, 170, 50, 50);
+          break;
+        case "44A/45A":
+          ctx.drawImage(trabajo2, 800, 250, 50, 50);
+          break;
+        case "50/51":
+          ctx.drawImage(trabajo2, 365, 325, 50, 50);
+          break;
+        case "52/53":
+          ctx.drawImage(trabajo2, 515, 325, 50, 50);
+          break;
+        case "Dep. Victoria":
+          ctx.drawImage(trabajo2, 415, 150, 50, 50);
+          break;
+        case "Dep. Suárez":
+          ctx.drawImage(trabajo2, 825, 300, 50, 50);
+          break;
+      }
+    }
+      
   }
 }
 
