@@ -293,6 +293,11 @@ function agregarFila() {
       let responsable = document.querySelector('#responsables').value;
       let secciones = '';
       let checkboxes = document.getElementsByName("secciones");
+      if (tbody.rows.length > 0) {
+        let ultimaFila = tbody.rows[tbody.rows.length -1];
+        srNo = parseInt(ultimaFila.cells[0].textContent) + 1;
+      }
+      
       for (var i =0; i< checkboxes.length; i++){
         if (checkboxes[i].checked){
           secciones += checkboxes[i].value + ', ';
