@@ -99,7 +99,6 @@ section {
   place-content: left;
 }
 .segundaColumna {
-  margin-top: 50%;
   position: relative;
 	font-size: 1em;
 	display: inline-block;
@@ -120,6 +119,7 @@ section {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-top: 5%;
 }
 
 .enviar:before {
@@ -198,6 +198,8 @@ footer, .eslogan{
     background-color: blue;
     border: 5px solid black;
     border-radius: 10px;
+    margin-bottom: 25%;
+    margin-top: 50%;
 }
 /* CSS para movil */
 
@@ -210,15 +212,12 @@ footer, .eslogan{
         margin: 1em;
     }
 
-    #boton-desencriptar, #boton-copiar{
-        margin-bottom: 1em;
-    }
 }
 
 /* Tablet */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .textArea, .muestraTexto, .rodapie{
+    .textArea, body, .rodapie{
         width: 90%;
     }
 
@@ -226,9 +225,7 @@ footer, .eslogan{
         margin: 1em;
     }
 
-    #boton-desencriptar, #boton-copiar{
-        margin-bottom: 1em;
-    }
+  
 }
               
             
