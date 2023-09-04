@@ -132,7 +132,7 @@ function dibujarTrabajo() {
         case "20/21":
           ctx.drawImage(trabajo, 550, 90, 50, 50);
           break;
-        case "40A/41A":
+        case "42/43":
           ctx.drawImage(trabajo, 200, 250, 50, 50);
           break;
         case "22/23":
@@ -140,25 +140,25 @@ function dibujarTrabajo() {
           ctx.drawImage(trabajo, 200, 170, 50, 50);
 
           break;
-        case "42/43":
+        case "44/45":
           ctx.drawImage(trabajo, 275, 250, 50, 50);
           break;
         case "24/25":
           ctx.drawImage(trabajo, 375, 170, 50, 50);
           break;
-        case "42A/43A":
+        case "46/47":
           ctx.drawImage(trabajo, 450, 250, 50, 50);
           break;
         case "26/27":
           ctx.drawImage(trabajo, 500, 170, 50, 50);
           break;
-        case "44/45":
+        case "48/49":
           ctx.drawImage(trabajo, 650, 250, 50, 50);
           break;
         case "28/29":
           ctx.drawImage(trabajo, 625, 170, 50, 50);
           break;
-        case "44A/45A":
+        case "60/61":
           ctx.drawImage(trabajo, 775, 250, 50, 50);
           break;
         case "50/51":
@@ -238,32 +238,32 @@ function dibujarTrabajo2() {
         case "20/21":
           ctx.drawImage(trabajo2, 590, 90, 50, 50);
           break;
-        case "40A/41A":
+        case "42/43":
           ctx.drawImage(trabajo2, 230, 250, 50, 50);
           break;
         case "22/23":
           ctx.drawImage(trabajo2, 740, 90, 50, 50);
           ctx.drawImage(trabajo2, 240, 170, 50, 50);
           break;
-        case "42/43":
+        case "44/45":
           ctx.drawImage(trabajo2, 290, 250, 50, 50);
           break;
         case "24/25":
           ctx.drawImage(trabajo2, 370, 170, 50, 50);
           break;
-        case "42A/43A":
+        case "46/47":
           ctx.drawImage(trabajo2, 465, 250, 50, 50);
           break;
         case "26/27":
           ctx.drawImage(trabajo2, 495, 170, 50, 50);
           break;
-        case "44/45":
+        case "48/49":
           ctx.drawImage(trabajo2, 695, 250, 50, 50);
           break;
         case "28/29":
           ctx.drawImage(trabajo2, 620, 170, 50, 50);
           break;
-        case "44A/45A":
+        case "60/61":
           ctx.drawImage(trabajo2, 800, 250, 50, 50);
           break;
         case "50/51":
@@ -395,7 +395,7 @@ function borrarTrabajo() {
         case "20/21":
           ctx.drawImage(trabajo, 550, 90, 50, 50);
           break;
-        case "40A/41A":
+        case "42/43":
           ctx.drawImage(trabajo, 200, 250, 50, 50);
           break;
         case "22/23":
@@ -403,25 +403,25 @@ function borrarTrabajo() {
           ctx.drawImage(trabajo, 200, 170, 50, 50);
 
           break;
-        case "42/43":
+        case "44/45":
           ctx.drawImage(trabajo, 275, 250, 50, 50);
           break;
         case "24/25":
           ctx.drawImage(trabajo, 375, 170, 50, 50);
           break;
-        case "42A/43A":
+        case "46/47":
           ctx.drawImage(trabajo, 450, 250, 50, 50);
           break;
         case "26/27":
           ctx.drawImage(trabajo, 500, 170, 50, 50);
           break;
-        case "44/45":
+        case "48/49":
           ctx.drawImage(trabajo, 650, 250, 50, 50);
           break;
         case "28/29":
           ctx.drawImage(trabajo, 625, 170, 50, 50);
           break;
-        case "44A/45A":
+        case "60/61":
           ctx.drawImage(trabajo, 775, 250, 50, 50);
           break;
         case "50/51":
