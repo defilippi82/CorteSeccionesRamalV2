@@ -6,93 +6,101 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="bp-cp.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
 		<title> Corte Secciones by FHD</title>
 	</head>
 
 <body>
 	<header>
-		<canvas id="micanvas" width="900" height="400"></canvas>
 		
+		<h1>Secciones</h1>
 	</header>
 
 	<main>
 		<ul class="columna">
 			<li>
-			<div class="primeraColumna">
+			<div>
 				<form>
-					<h2 for="responsables">Personal a cargo</h2>
-						<input type="text" id="responsables" required placeholder="a cargo de">
-								
+					
 						<fieldset>
-							<h1>Secciones</h1>
-							<ul class="lista1">
-							<li><label for="checkbox-plat1"><input type="checkbox" name="secciones" value="1" id="checkbox-secciones">Plataforma 1</label></li>
-							<li><label for="checkbox-plat2"><input type="checkbox" name="secciones" value="2" id="checkbox-secciones">Plataforma 2</label></li>
-							<li><label for="checkbox-plat3"><input type="checkbox" name="secciones" value="3" id="checkbox-secciones">Plataforma 3</label></li>
-							<li><label for="checkbox-plat4"><input type="checkbox" name="secciones" value="4" id="checkbox-secciones">Plataforma 4</label></li>
-							<li><label for="checkbox-plat5"><input type="checkbox" name="secciones" value="5" id="checkbox-secciones">Plataforma 5</label></li>
-							<li><label for="checkbox-plat6"><input type="checkbox" name="secciones" value="6" id="checkbox-secciones">Plataforma 6</label></li>
-							<li><label for="checkbox-plat7"><input type="checkbox" name="secciones" value="7" id="checkbox-secciones">Plataforma 7</label></li>
-							<li><label for="checkbox-plat8"><input type="checkbox" name="secciones" value="8" id="checkbox-secciones">Plataforma 8</label></li></ul>
-							<ul class="lista2">
+							
+							<div class="d-flex justify-content-start">
+							<ul class="lista1 form-check-inline">
+							<li><label for="checkbox-plat1"><input class="form-check-input" type="checkbox" name="secciones" value="1" id="checkbox-secciones flexCheckDefault"> Plat.1 </label></li>
+							<li><label for="checkbox-plat2"><input class="form-check-input" type="checkbox" name="secciones" value="2" id="checkbox-secciones flexCheckDefault"> Plat.2 </label></li>
+							<li><label for="checkbox-plat3"><input class="form-check-input" type="checkbox" name="secciones" value="3" id="checkbox-secciones flexCheckDefault"> Plat.3 </label></li>
+							<li><label for="checkbox-plat4"><input class="form-check-input" type="checkbox" name="secciones" value="4" id="checkbox-secciones flexCheckDefault"> Plat.4 </label></li>
+							<li><label for="checkbox-plat5"><input class="form-check-input" type="checkbox" name="secciones" value="5" id="checkbox-secciones flexCheckDefault"> Plat.5 </label></li>
+							<li><label for="checkbox-plat6"><input class="form-check-input" type="checkbox" name="secciones" value="6" id="checkbox-secciones flexCheckDefault"> Plat.6 </label></li>
+							<li><label for="checkbox-plat7"><input class="form-check-input" type="checkbox" name="secciones" value="7" id="checkbox-secciones flexCheckDefault"> Plat.7 </label></li>
+							<li><label for="checkbox-plat8"><input class="form-check-input" type="checkbox" name="secciones" value="8" id="checkbox-secciones flexCheckDefault"> Plat.8 </label></li></ul>
+							<ul class="lista2 form-check-inline form-switch">
 								<h2>BP-CP</h2>
-							<li><label for="checkbox-12/16"><input type="checkbox" name="secciones" value="12/16" id="checkboxcheckbox-secciones">12/16</label>
-							<label for="checkbox-13/17"><input type="checkbox" name="secciones" value="13/17" id="checkbox-secciones">13/17</label>
-							<label for="checkbox-40/41"><input type="checkbox" name="secciones" value="40/41" id="checkbox-secciones">40/41</label>
-							<label for="checkbox-42/43"><input type="checkbox" name="secciones" value="42/43" id="checkbox-secciones">42/43</label>
-							<label for="checkbox-44/45"><input type="checkbox" name="secciones" value="44/45" id="checkbox-secciones">44/45</label>
-							<label for="checkbox-46/47"><input type="checkbox" name="secciones" value="46/47" id="radio-secciones">46/47</label>
-							<label for="checkbox-48/49"><input type="checkbox" name="secciones" value="48/49" id="checkbox-secciones">48/49</label>
-							<label for="checkbox-60/61"><input type="checkbox" name="secciones" value="60/61" id="checkbox-secciones">60/61</label></li>
-							<li><label for="checkbox-50/51"><input type="checkbox" name="secciones" value="50/51" id="checkbox-secciones">50/51</label>
-							<label for="checkbox-52/53"><input type="checkbox" name="secciones" value="52/53" id="checkbox-secciones">52/53</label></li>
-							<li><label for="checkbox-depositoSuarez"><input type="checkbox" name="secciones" value="Dep. Suárez" id="checkbox-secciones">Depósito Suárez</label></li>
+							<li><label for="checkbox-12/16 flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="12/16" id="checkbox-secciones flexSwitchCheckDefault"> 12/16</label></li>
+							<li><label for="checkbox-13/17 flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="13/17" id="checkbox-secciones flexSwitchCheckDefault"> 13/17</label></li>
+							<li><label for="checkbox-40/41 flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="40/41" id="checkbox-secciones flexSwitchCheckDefault"> 40/41</label></li>
+							<li><label for="checkbox-42/43 flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="42/43" id="checkbox-secciones flexSwitchCheckDefault"> 42/43</label></li>
+							<li><label for="checkbox-44/45 flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="44/45" id="checkbox-secciones flexSwitchCheckDefault"> 44/45</label></li>
+							<li><label for="checkbox-46/47 flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="46/47" id="checkbox-secciones flexSwitchCheckDefault"> 46/47</label></li>
+							<li><label for="checkbox-48/49 flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="48/49" id="checkbox-secciones flexSwitchCheckDefault"> 48/49</label></li>
+							<li><label for="checkbox-60/61 flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="60/61" id="checkbox-secciones flexSwitchCheckDefault"> 60/61</label></li>
+							<li><label for="checkbox-50/51 flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="50/51" id="checkbox-secciones flexSwitchCheckDefault"> 50/51</label></li>
+							<li><label for="checkbox-52/53 flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="52/53" id="checkbox-secciones flexSwitchCheckDefault"> 52/53</label></li>
+							<li><label for="checkbox-depositoSuarez flexSwitchCheckDefault" class="form-check-label"><input class="form-check-input" type="checkbox" name="secciones" value="Dep. Suárez" id="checkbox-secciones flexSwitchCheckDefault"> Depósito Suárez</label></li>
 							</ul>
-							<ul class="lista2">
+							<ul class="lista2 form-check-inline form-switch">
 								<H2>AP</H2>
-							<li><label for="checkbox-10/14"><input type="checkbox" name="secciones" value="10/14" id="checkboxcheckbox-secciones">10/14</label>
-							<label for="checkbox-11/15"><input type="checkbox" name="secciones" value="13/17" id="checkbox-secciones">11/15</label>
-							<li><label for="checkbox-12/16"><input type="checkbox" name="secciones" value="12/16" id="checkboxcheckbox-secciones">12/16</label>
-							<label for="checkbox-13/17"><input type="checkbox" name="secciones" value="13/17" id="checkbox-secciones">13/17</label>
-							<label for="checkbox-18/19"><input type="checkbox" name="secciones" value="18/19" id="checkbox-secciones">18/19</label>
-							<label for="checkbox-20/21"><input type="checkbox" name="secciones" value="20/21" id="checkbox-secciones">20/21</label>
-							<label for="checkbox-22/23"><input type="checkbox" name="secciones" value="22/23" id="checkbox-secciones">22/23</label>
-							<label for="checkbox-24/25"><input type="checkbox" name="secciones" value="24/25" id="radio-secciones">24/25</label>
-							<label for="checkbox-26/27"><input type="checkbox" name="secciones" value="26/27" id="checkbox-secciones">26/27</label>
-							<label for="checkbox-28/29"><input type="checkbox" name="secciones" value="28/29" id="checkbox-secciones">28/29</label></li>
-							<li><label for="checkbox-depositoVictoria"><input type="checkbox" name="secciones" value="Dep. Victoria" id="checkbox-secciones">Depósito Victoria</label></li>
+							
+							<li><label class="form-check-label" for="flexSwitchCheckDefault checkbox-10/14 "><input type="checkbox" name="secciones" value="10/14" class="form-check-input" id="checkbox-secciones flexSwitchCheckDefault"> 10/14</label>
+							<li><label class="form-check-label" for="flexSwitchCheckDefault checkbox-11/15"><input type="checkbox" name="secciones" value="13/17" class="form-check-input" id="checkbox-secciones flexSwitchCheckDefault"> 11/15</label></li>
+							<li><label class="form-check-label" for="flexSwitchCheckDefault checkbox-18/19"><input type="checkbox" name="secciones" value="18/19" class="form-check-input" id="checkbox-secciones flexSwitchCheckDefault"> 18/19</label></li>
+							<li><label class="form-check-label" for="flexSwitchCheckDefault checkbox-20/21"><input type="checkbox" name="secciones" value="20/21" class="form-check-input" id="checkbox-secciones flexSwitchCheckDefault"> 20/21</label></li>
+							<li><label class="form-check-label" for="flexSwitchCheckDefault checkbox-22/23"><input type="checkbox" name="secciones" value="22/23" class="form-check-input" id="checkbox-secciones flexSwitchCheckDefault"> 22/23</label></li>
+							<li><label class="form-check-label" for="flexSwitchCheckDefault checkbox-24/25"><input type="checkbox" name="secciones" value="24/25" class="form-check-input" id="checkbox-secciones flexSwitchCheckDefault"> 24/25</label></li>
+							<li><label class="form-check-label" for="flexSwitchCheckDefault checkbox-26/27"><input type="checkbox" name="secciones" value="26/27" class="form-check-input" id="checkbox-secciones flexSwitchCheckDefault"> 26/27</label></li>
+							<li><label class="form-check-label" for="flexSwitchCheckDefault checkbox-28/29"><input type="checkbox" name="secciones" value="28/29" class="form-check-input" id="checkbox-secciones flexSwitchCheckDefault"> 28/29</label></li>
+							<li><label class="form-check-label" for="flexSwitchCheckDefault checkbox-depositoVictoria"><input type="checkbox" name="secciones" value="Dep. Victoria" class="form-check-input" id="checkbox-secciones flexSwitchCheckDef</li>ault"> Depósito Victoria</label></li>
 							</ul>
+							</div>
+							<div class="input-group mb-3">
+							<input type="text" class="form-control" id="responsables" required placeholder="Personal a cargo" aria-label="Personal a cargo" aria-describedby="button-addon2">
+							<button type="button" value="Ocupar Vía" class="enviar btn btn-outline-secondary" id="button-addon2" onclick="agregarFila()">Ocupar Vía</button>
+							</div>		
 						</fieldset>
 
-					<button type=button value="Ocupar Vía" class="enviar" onclick="agregarFila()">Ocupar Vía</button>
+					
 				</form>
 			</div>
 		</li>
 		<li>
+			<div class="d-flex justify-content-center"></div>
 			<div class="segundaColumna">
 				
 				<form class="segundaColumna">
 					<div id="dia-hora" class="reloj" onload="cargarReloj()"></div>
 
 				<h2 for="viaLibre">Eliminar Trabajo</h2>
-				<input type="text" id="viaLibre" class="viaLibre" required required placeholder="Nº Trabajo">
-
-		
-				<button type="button" id="librar" value="Vía Expedita" class="enviar" onclick="borrarFila()">Vía Expedita</button>
-
+				<div class="input-group mb-3">
+				<input type="text"  class="form-control"id="viaLibre" required required placeholder="Nº Trabajo" aria-label="Nº Trabajo" aria-describedby="button-addon2">
+				<button type="button" id="librar button-addon2" value="Vía Expedita" class="enviar btn btn-outline-secondary" id="button-addon2" onclick="borrarFila()">Vía Expedita</button>
+				</div>
 				</form>
 			</div>
+		</div>
 		</li>
 	</ul>
 	</main>
+		
 	<section>
-		<h1>Tabla de responsables</h1>
-		<table>
-		<thead>
+		<canvas id="micanvas" width="1800" height="400" ></canvas>
+		<h1 class="title-h1">Tabla de responsables</h1>
+		<table class="table">
+		<thead class="container text-center">
 			<tr>
-				<th>N°</th>
-				<th>Responsables</th>
-				<th>Secciones</th>
+				<th scope="col-2">N°</th>
+				<th scope="col-5">Responsables</th>
+				<th scope="col-5">Secciones</th>
 			</tr>
 		</thead>
 		<tbody id="tabla">
@@ -105,12 +113,15 @@
 
 		<img class="rodapie" src="imagenes/logo-grisSin-fondo.png" width="125px" height="125px">
 		<p class="eslogan">Navegá más allá de lo esperado</p>
-		
+		<p class="brand-copy"> copyright 2023 - FHD</p>
+            <p>Developed by FHD</p>
 		
 	</footer>
 
 
-<script src="bp-cp.js"></script>
-  	
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="bp-cp.js"></script> 	
 
 </html>

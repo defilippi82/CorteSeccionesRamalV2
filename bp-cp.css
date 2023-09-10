@@ -1,6 +1,14 @@
+header{
+ display: block;
+ position: relative;
+ align-content: center;
+ text-decoration: underline;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
 body{
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1047%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1048)'%3e%3c/rect%3e%3cpath d='M463.76 586.61C625.14 580.38 755.42 318.79 1051.52 318.52 1347.62 318.25 1489.15 441.06 1639.28 441.72' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M490.91 646.15C630.91 643.87 733.39 479.22 1022.47 469.71 1311.55 460.2 1404.07 198.1 1554.03 189.71' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M807.69 584.71C974.4 529.29 1018.79 46.43 1254.57 42.41 1490.35 38.39 1574.76 275.71 1701.45 283.21' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M655.1 666.52C750.03 655.23 704.9 455.75 965.11 442.63 1225.33 429.51 1418.4 200.69 1585.14 196.23' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M583.65 630.07C707.26 605 672.62 287.25 953.29 286.71 1233.96 286.17 1503.04 453.66 1692.57 454.71' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1047'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='100%25' y1='50%25' x2='0%25' y2='50%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1048'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(66%2c 130%2c 212%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
-	animation: square-in-hesitate 1s;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='auto' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1047%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1048)'%3e%3c/rect%3e%3cpath d='M463.76 586.61C625.14 580.38 755.42 318.79 1051.52 318.52 1347.62 318.25 1489.15 441.06 1639.28 441.72' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M490.91 646.15C630.91 643.87 733.39 479.22 1022.47 469.71 1311.55 460.2 1404.07 198.1 1554.03 189.71' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M807.69 584.71C974.4 529.29 1018.79 46.43 1254.57 42.41 1490.35 38.39 1574.76 275.71 1701.45 283.21' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M655.1 666.52C750.03 655.23 704.9 455.75 965.11 442.63 1225.33 429.51 1418.4 200.69 1585.14 196.23' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M583.65 630.07C707.26 605 672.62 287.25 953.29 286.71 1233.96 286.17 1503.04 453.66 1692.57 454.71' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1047'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='100%25' y1='50%25' x2='0%25' y2='50%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1048'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(66%2c 130%2c 212%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+	animation: square-in-hesitate 100ms;
 	font-family: cursive;
     font-style: bold;
     padding-top: 15px;
@@ -9,16 +17,6 @@ body{
     text-align: center;
     font-size: 1em;
 
-}
-
-h1 {
-	font-size: 3em;
-	text-align: center;
-	align-content: center;
-}
-h2{
-	font-size: 22px;
-  text-align: center;
 }
 @keyframes square-in-hesitate {
   0% {
@@ -31,10 +29,21 @@ h2{
     clip-path: inset(0 0 0 0);
   }
 }
+h1 {
+	font-size: 3em;
+	text-align: center;
+	align-content: center;
+}
+h2{
+	font-size: 22px;
+  text-align: center;
+}
+
 
 [transition-style="in:square:hesitate"] {
   animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-hesitate both;
 }
+
 .resaltado{
 	background-color: red;
 }
@@ -50,27 +59,27 @@ th, td, .enviar {
 			text-align: center;
 			border-bottom: 1px solid darkblue;
 		}
+   
 .lista1{
 	
 	display: inline-block;
 	text-align: justify;
-	width: 30%;
+	width: auto;
 	vertical-align: top;
 	margin: 0 1%;
-	padding: 30px 20px;
 	box-sizing: border-box;
 	border-color: #000000;
 	border-width: 2px;
 	border-style: solid;
 	border-radius: 10px;
+  font-style: italic;
 }
 .lista2{
 	display: inline-block;
 	text-align: center;
-	width: 30%;
+	width: auto;
 	vertical-align: top;
 	margin: 0 1%;
-	padding: 30px 20px;
 	box-sizing: border-box;
 	border-color: #000000;
 	border-width: 2px;
@@ -92,20 +101,10 @@ section {
 	font-size: 1em;
 	
 }
-.primeraColumna {
-	position: relative;
-	font-size: 1em;
-	display: inline-block;
-  place-content: left;
-}
-.segundaColumna {
-  position: relative;
-	font-size: 1em;
-	display: inline-block;
-  place-content: right;
-}
- 
 
+.vialibre{
+	width: 30cap
+}
 .enviar {
   padding: 0.6em 2em;
   border: none;
@@ -186,6 +185,8 @@ footer, .eslogan{
 	text-align: center;
     width: 125px;
     transition: 1s;
+    max-width: fit-content;
+
 }
              
     
@@ -193,7 +194,7 @@ footer, .eslogan{
     color: white;
     font-size: 1.5em;
     font-family: Arial;
-    letter-spacing: 5px;
+    letter-spacing: 15px;
     text-align: center;
     background-color: blue;
     border: 5px solid black;

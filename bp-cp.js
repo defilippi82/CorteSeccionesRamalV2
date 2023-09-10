@@ -3,7 +3,8 @@ const ctx = canvas.getContext("2d");
 const img = new Image();
 const trabajo = new Image();
 const trabajo2 = new Image();
-img.src = "imagenes/esquemaCom.png";
+img.src = "imagenes/diagramaN.png";
+//img.src = "imagenes/esquemaCom.png";
 trabajo.src = "imagenes/trabajo.png";
 trabajo2.src = "imagenes/trabajo2.png";
 
@@ -12,7 +13,6 @@ img.onload = function(){
 }
 
 const tabla = document.getElementById("tabla")
-
 
 
 function resaltarIguales() {
@@ -87,28 +87,28 @@ function dibujarTrabajo() {
       
       switch (seccion) {
         case "8":
-          ctx.drawImage(trabajo, 0, 30, 25, 25);
-          break;
-        case "7":
-          ctx.drawImage(trabajo, 0, 40, 25, 25);
-          break;
-        case "6":
-          ctx.drawImage(trabajo, 0, 50, 25, 25);
-          break;
-        case "5":
           ctx.drawImage(trabajo, 0, 60, 25, 25);
           break;
-        case "4":
+        case "7":
           ctx.drawImage(trabajo, 0, 70, 25, 25);
           break;
-        case "3":
+        case "6":
           ctx.drawImage(trabajo, 0, 80, 25, 25);
           break;
-        case "2":
+        case "5":
           ctx.drawImage(trabajo, 0, 90, 25, 25);
           break;
-        case "1":
+        case "4":
           ctx.drawImage(trabajo, 0, 100, 25, 25);
+          break;
+        case "3":
+          ctx.drawImage(trabajo, 0, 110, 25, 25);
+          break;
+        case "2":
+          ctx.drawImage(trabajo, 0, 120, 25, 25);
+          break;
+        case "1":
+          ctx.drawImage(trabajo, 0, 130, 25, 25);
           break;
         case "10/14":
           ctx.drawImage(trabajo, 180, 90, 50, 50);
@@ -193,28 +193,28 @@ function dibujarTrabajo2() {
       
       switch (seccion) {
         case "8":
-          ctx.drawImage(trabajo2, 20, 30, 25, 25);
-          break;
-        case "7":
-          ctx.drawImage(trabajo2, 20, 40, 25, 25);
-          break;
-        case "6":
-          ctx.drawImage(trabajo2, 20, 50, 25, 25);
-          break;
-        case "5":
           ctx.drawImage(trabajo2, 20, 60, 25, 25);
           break;
-        case "4":
+        case "7":
           ctx.drawImage(trabajo2, 20, 70, 25, 25);
           break;
-        case "3":
+        case "6":
           ctx.drawImage(trabajo2, 20, 80, 25, 25);
           break;
-        case "2":
+        case "5":
           ctx.drawImage(trabajo2, 20, 90, 25, 25);
           break;
-        case "1":
+        case "4":
           ctx.drawImage(trabajo2, 20, 100, 25, 25);
+          break;
+        case "3":
+          ctx.drawImage(trabajo2, 20, 110, 25, 25);
+          break;
+        case "2":
+          ctx.drawImage(trabajo2, 20, 120, 25, 25);
+          break;
+        case "1":
+          ctx.drawImage(trabajo2, 20, 130, 25, 25);
           break;
         case "10/14":
           ctx.drawImage(trabajo2, 220, 90, 50, 50);
@@ -493,5 +493,8 @@ function cargarReloj(){
 
 // Ejecutamos la función 'CargarReloj' 
 cargarReloj();
+  
+
+
   
 
