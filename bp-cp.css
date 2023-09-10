@@ -101,6 +101,30 @@ section {
 	font-size: 1em;
 	
 }
+.diagramaN{
+  widows: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.diagramaN picture{
+  width: 320px;
+  height: 250px;
+  overflow: hidden;
+  transition: all 500ms ease;
+  border-radius: 5px;
+  box-shadow:  1px 10px 15px rgba(0,0,0,0.50);
+
+}
+.diagramaN picture img{
+  width: 100%;
+  height: 100%;
+  transition: all 500ms ease;
+}
+.diagramaN picture img:hover{
+  transform: scale(2);
+}
 
 .vialibre{
 	width: 30cap
